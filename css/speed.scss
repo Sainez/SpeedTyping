@@ -149,15 +149,14 @@ body{
                     text-align: center;
                     font-size: 12px;
                     letter-spacing: .6px;
-                    font-weight: 100;
+                    font-weight: bold;
                     font-family: verdana;
                     background-color: teal;
                     text-shadow: 3px 3px 5px rgba(0, 0, 0, .5);
-                    box-shadow: 10px 10px 30px rgba(0, 0, 0, .5);
-                    opacity: 1;
+                    box-shadow: 10px 10px 30px rgba(0, 0, 0, .5);                    
     
                     &::placeholder{
-                        font-weight: 100;
+                        font-weight: bold;
                         font-family: verdana;
                         color: color(info);
                     }                 

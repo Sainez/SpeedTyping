@@ -139,35 +139,34 @@ body main section form #wordInput {
   text-align: center;
   font-size: 12px;
   letter-spacing: .6px;
-  font-weight: 100;
+  font-weight: bold;
   font-family: verdana;
   background-color: teal;
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
           box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
-  opacity: 1;
 }
 
 body main section form #wordInput::-webkit-input-placeholder {
-  font-weight: 100;
+  font-weight: bold;
   font-family: verdana;
   color: #17a2b8;
 }
 
 body main section form #wordInput:-ms-input-placeholder {
-  font-weight: 100;
+  font-weight: bold;
   font-family: verdana;
   color: #17a2b8;
 }
 
 body main section form #wordInput::-ms-input-placeholder {
-  font-weight: 100;
+  font-weight: bold;
   font-family: verdana;
   color: #17a2b8;
 }
 
 body main section form #wordInput::placeholder {
-  font-weight: 100;
+  font-weight: bold;
   font-family: verdana;
   color: #17a2b8;
 }
