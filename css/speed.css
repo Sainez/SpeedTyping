@@ -229,7 +229,7 @@ body main section form #timeLeft span {
   font-weight: bold;
   font-size: 15px;
   color: orange;
-  text-shadow: 3px 3px 5px black;
+  text-shadow: 0 0 5px black;
 }
 
 body main section form #scoreBoard {
@@ -242,7 +242,7 @@ body main section form #scoreBoard span {
   font-weight: bold;
   font-size: 15px;
   color: lime;
-  text-shadow: 3px 3px 5px black;
+  text-shadow: 0 0 5px black;
 }
 
 body main section form #best {
@@ -255,7 +255,7 @@ body main section form #best span {
   font-weight: bold;
   font-size: 15px;
   color: #17a2b8;
-  text-shadow: 3px 3px 5px black;
+  text-shadow: 0 0 5px black;
 }
 
 body main section form .blockquote {
