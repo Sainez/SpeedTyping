@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Speed</title>
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/all.css">
+    
+    <!-- styling css -->
+    <link rel="stylesheet" type="text/css" href="css/speed.css">
+</head>
+<body>
+        <!-- bootstrap funtionality -->
+        <script type="text/javascript" src="assets/js/jquery.js"></script>
+        <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+        <!-- words library -->
+        <script type="text/javascript" src="assets//library/library.js"></script>
+
+
+    <!-- main conatiner -->
+    <main class="container">
+        <section class="mx-auto">
+            <form class="form">
+
+                <!-- Title -->
+                <h4 id="title">Speed Typying Game</h4>
+                <hr>
+
+
+                <!-- Defficulty Levels -->
+                <h4 id="difficulty">Difficulty Level</h4>
+
+                <div id="levelWrap" >
+
+                    <div class="mr-auto">
+                        <label>Easy</label>
+                        <input  id="level" type="radio" name="level" checked='true' onchange="setLevel()"  value='5'>
+                    </div>
+
+                    <div class="mr-auto">
+                            <label>Medium</label>
+                            <input id="level" type="radio"  name="level" onchange="setLevel()" value='4'>
+                    </div>
+
+                    <div class="mx-auto">
+                        <label>Intermediate</label>
+                        <input id="level" type="radio"  name="level" onchange="setLevel()" value='3'>
+                    </div>
+
+                    <div class="ml-auto">
+                            <label>Hard</label>
+                            <input id="level" type="radio"  name="level" onchange="setLevel()" value='2'>
+                    </div>
+
+                    <div class="ml-auto">
+                        <label>Impossible</label>
+                        <input id="level" type="radio"  name="level" onchange="setLevel()" value='1'>
+                    </div>
+
+                </div>
+                <hr>
+
+
+
+                <!-- Info text -->
+                <h4 id="info">Type the given word(s) within<span id="seconds" class="badge">5</span>second(s)</h4>
+
+                <hr>
+                <h4 id="text"></h4>
+
+                <hr>
+                
+
+
+
+
+                <!-- Randomly generated words -->
+                <input id="wordInput" placeholder="Type the word to start...">
+
+                <hr>
+
+
+
+
+
+                <!-- user input -->
+                 <input class="msg" type="text" id="msg" value="Status" readonly>
+                <hr>
+
+
+
+
+                <!-- Timmer and Scores -->
+
+                <h4 id="timeLeft">Time left: <span id="timer" class="badge"> 0 </span></h4>
+                <hr>
+
+                <h4 id="scoreBoard">score: <span id="score" class="badge"> 0 </span></h4>
+                <hr>
+
+                <h4 id="best">Bestscore: <span id="bestScore" class="badge"> 0 </span></h4>
+                <hr>
+
+
+
+
+                <!-- footer info -->
+                <blockquote class="blockquote">
+                    <footer class="blockquote-footer mr-auto">Powered By:<cite>Sainez Amon</cite></footer>
+                    <i class="fas fa-umbrella mx-auto"></i>
+                    <footer class="blockquote-footer ml-auto"> Inspired By:<cite>Joan Kuto</cite> </footer>
+                </blockquote>
+
+            </form>           
+        </section>
+    </main>
+
+
+    <!-- functional js file -->
+    <script type="text/javascript" src="js/speed.js"></script>
+
+</body>
+</html>

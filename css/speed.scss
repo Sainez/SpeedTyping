@@ -1,0 +1,281 @@
+/*------------------- Global -----------------------------*/
+/* Breakpoints: xs: 0,  sm: 576px; md: 768px; lg: 992px; xl: 1200px; */
+$colors: (
+    fevorite: #e8491d,
+    primary: #007bff,
+    primary-light: lighten(#005DFF, 40%),
+    primary-dark: darken(#005DFF, 40%),
+    dark-info: darken(#17a2b8, 20%),
+    accent: #FFF6BB,
+    secondary: rgba(0, 0, 0, .5),
+    success: #28a745,
+    info: #17a2b8,
+    warning: #ffc107,
+    danger: #dc3545,
+    orange-light: rgba(255, 165, 0, .7)
+
+);
+
+@function color($color-name){
+    @return map-get($colors, $color-name )
+};
+
+$desktop: 768px;
+
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    } 
+}
+
+body{
+    background-image: url('../assets/images/stadium.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: verdana;
+
+    main{
+        padding: 1em;
+        background-color: transparent;
+
+        section{
+            border: none;
+            border-radius: 10px;
+            width: 100%;
+            padding: 1em;
+            box-shadow: 0 10px 30px rgb(0, 0, 0);
+            background-color: transparent;
+
+            @include desktop{
+                width: 30em;
+            }
+
+            form{
+                padding: .5em;
+                text-align: center;
+                background-color: rgba(0, 128, 128, .7);
+                border: solid 2px orange;
+                border-radius: 10px;
+    
+                #title{
+                    color: orange;
+                    font-size: 15px;
+                    font-family: georgia;
+                    font-weight: bold;
+                    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+                }
+                #difficulty{
+                    color: color(info);
+                    font-weight: bold;
+                    font-size: 13px;
+                    font-family: verdana;
+                    letter-spacing: 1em;
+                    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+                }
+    
+                #levelWrap{
+                    display: flex;
+                    flex-direction: row;
+    
+                    div{
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center !important;
+
+                        label{
+                            font-size: 10px;
+                            font-weight: bold;
+                            font-family: verdana;
+                        }
+
+                        input{
+                            -webkit-appearance: none;
+                            -moz-appearance: none;
+                            appearance: none;
+
+                            border: solid gray 1px;
+                            border-radius: 50%;
+                            background-color: color(info);
+                            width: 10px;
+                            height: 10px;
+                            margin: auto !important;
+
+                            &:checked{
+                                border: solid black 2px;          
+                                background-color: lime;
+                                box-shadow: 0 0 10px orange;
+                            }                          
+                        }
+                    }
+                }
+    
+                #info{
+                    font-size: 11px;
+                    font-weight: bold;
+                    color: color(secondary);
+                    font-family: verdana;              
+    
+                    span{
+                        color: black;
+                        font-size: 15px;
+                        font-family: Georgia;
+                        font-weight: bold;
+                        background-color: transparent;
+                    }
+                }
+
+                #text{
+                    color: lime;
+                    border-radius: 5px;
+                    font-size: 15px;
+                    font-weight: bold;
+                    font-family: verdana;
+                    letter-spacing: .5px;
+                    text-shadow: 3px 3px 5px rgba(0, 0, 0, .5);
+                    opacity: 1;
+                    background-color: teal;
+                    width: 80%;
+                    padding: 3px 1px 3px 1px;
+                    margin: auto;
+                }
+    
+                #wordInput{
+                    width: 80%;
+                    height: 3em;
+                    border: solid color(success) 2px;
+                    border-radius: 5px;
+                    color: orange;
+                    text-align: center;
+                    font-size: 12px;
+                    letter-spacing: .6px;
+                    font-weight: 100;
+                    font-family: verdana;
+                    background-color: teal;
+                    text-shadow: 3px 3px 5px rgba(0, 0, 0, .5);
+                    box-shadow: 10px 10px 30px rgba(0, 0, 0, .5);
+                    opacity: 1;
+    
+                    &::placeholder{
+                        font-weight: 100;
+                        font-family: verdana;
+                        color: color(info);
+                    }                 
+                    
+                }
+
+                .msg{
+                    background-color: teal;
+                    color: color(secondary);
+                    font-family: verdana;
+                    width: 40%;
+                    height: 3em;
+                    border: none;
+                    border-radius: 5px;
+                    text-align: center;
+                    font-size: 12px;
+                    font-family: Georgia;
+                    font-weight: bold;
+                    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+                    opacity: 1;
+                }
+
+                .correct{
+                    background-color: teal;
+                    color: color(success);
+                    width: 40%;
+                    height: 3em;
+                    border: none;
+                    border-radius: 5px;
+                    text-align: center;
+                    font-family: Georgia;
+                    font-size: 12px;
+                    font-weight: bold;
+                    box-shadow: 0 0 5px rgb(77, 255, 23);
+                    opacity: 1;
+                }
+
+                .gameOver{
+                    background-color: teal;
+                    color: rgb(144, 4, 4);
+                    width: 40%;
+                    height: 3em;
+                    border: none;
+                    border-radius: 5px;
+                    text-align: center;
+                    font-size: 12px;
+                    font-family: Georgia;
+                    font-weight: bold;
+                    box-shadow: 0 0 5px red;
+                }
+    
+                #timeLeft{
+                    color: black;
+                    font-size: 13px;
+                    font-family: georgia;
+    
+                    span{
+                        font-weight: bold;
+                        font-size: 15px;
+                        color: orange;
+                        text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
+                    }
+                }
+
+                #scoreBoard{
+                    color: black;
+                    font-size: 13px;
+                    font-family: georgia;
+    
+                    span{
+                        font-weight: bold;
+                        font-size: 15px;
+                        color: lime;
+                        text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
+                    }
+                }
+
+                #best{
+                    color: black;
+                    font-size: 13px;
+                    font-family: georgia;
+    
+                    span{
+                        font-weight: bold;
+                        font-size: 15px;
+                        color: color(info);
+                        text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
+                    }
+                }
+
+                .blockquote {
+                    display: flex;
+                    flex-direction: row;
+                    margin: 0;
+                    padding: 0;
+                    
+                    .blockquote-footer {
+                        color: color(orange-light);
+                        font-family: Georgia;
+                        font-size: 11px;
+                        margin: 0;
+                        padding: 0;
+
+                        cite{
+                            color: orange;
+                            font-family: Georgia;
+                            font-size: 11px;
+                            font-weight: bold;
+                            margin-left: .5em;
+                        }
+                    }
+
+                    .fa-umbrella{
+                        color: color(orange-light);
+                        font-size: 18px;
+                    }
+                }
+            }
+        }    
+    }
+}

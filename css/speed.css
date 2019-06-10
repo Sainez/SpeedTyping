@@ -1,0 +1,294 @@
+/*------------------- Global -----------------------------*/
+/* Breakpoints: xs: 0,  sm: 576px; md: 768px; lg: 992px; xl: 1200px; */
+body {
+  background-image: url("../assets/images/stadium.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-family: verdana;
+}
+
+body main {
+  padding: 1em;
+  background-color: transparent;
+}
+
+body main section {
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  padding: 1em;
+  -webkit-box-shadow: 0 10px 30px black;
+          box-shadow: 0 10px 30px black;
+  background-color: transparent;
+}
+
+@media (min-width: 768px) {
+  body main section {
+    width: 30em;
+  }
+}
+
+body main section form {
+  padding: .5em;
+  text-align: center;
+  background-color: rgba(0, 128, 128, 0.7);
+  border: solid 2px orange;
+  border-radius: 10px;
+}
+
+body main section form #title {
+  color: orange;
+  font-size: 15px;
+  font-family: georgia;
+  font-weight: bold;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+body main section form #difficulty {
+  color: #17a2b8;
+  font-weight: bold;
+  font-size: 13px;
+  font-family: verdana;
+  letter-spacing: 1em;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+body main section form #levelWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body main section form #levelWrap div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center !important;
+}
+
+body main section form #levelWrap div label {
+  font-size: 10px;
+  font-weight: bold;
+  font-family: verdana;
+}
+
+body main section form #levelWrap div input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: solid gray 1px;
+  border-radius: 50%;
+  background-color: #17a2b8;
+  width: 10px;
+  height: 10px;
+  margin: auto !important;
+}
+
+body main section form #levelWrap div input:checked {
+  border: solid black 2px;
+  background-color: lime;
+  -webkit-box-shadow: 0 0 10px orange;
+          box-shadow: 0 0 10px orange;
+}
+
+body main section form #info {
+  font-size: 11px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: verdana;
+}
+
+body main section form #info span {
+  color: black;
+  font-size: 15px;
+  font-family: Georgia;
+  font-weight: bold;
+  background-color: transparent;
+}
+
+body main section form #text {
+  color: lime;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: verdana;
+  letter-spacing: .5px;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  background-color: teal;
+  width: 80%;
+  padding: 3px 1px 3px 1px;
+  margin: auto;
+}
+
+body main section form #wordInput {
+  width: 80%;
+  height: 3em;
+  border: solid #28a745 2px;
+  border-radius: 5px;
+  color: orange;
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: .6px;
+  font-weight: 100;
+  font-family: verdana;
+  background-color: teal;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+          box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+  opacity: 1;
+}
+
+body main section form #wordInput::-webkit-input-placeholder {
+  font-weight: 100;
+  font-family: verdana;
+  color: #17a2b8;
+}
+
+body main section form #wordInput:-ms-input-placeholder {
+  font-weight: 100;
+  font-family: verdana;
+  color: #17a2b8;
+}
+
+body main section form #wordInput::-ms-input-placeholder {
+  font-weight: 100;
+  font-family: verdana;
+  color: #17a2b8;
+}
+
+body main section form #wordInput::placeholder {
+  font-weight: 100;
+  font-family: verdana;
+  color: #17a2b8;
+}
+
+body main section form .msg {
+  background-color: teal;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: verdana;
+  width: 40%;
+  height: 3em;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 12px;
+  font-family: Georgia;
+  font-weight: bold;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  opacity: 1;
+}
+
+body main section form .correct {
+  background-color: teal;
+  color: #28a745;
+  width: 40%;
+  height: 3em;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  font-family: Georgia;
+  font-size: 12px;
+  font-weight: bold;
+  -webkit-box-shadow: 0 0 5px #4dff17;
+          box-shadow: 0 0 5px #4dff17;
+  opacity: 1;
+}
+
+body main section form .gameOver {
+  background-color: teal;
+  color: #900404;
+  width: 40%;
+  height: 3em;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 12px;
+  font-family: Georgia;
+  font-weight: bold;
+  -webkit-box-shadow: 0 0 5px red;
+          box-shadow: 0 0 5px red;
+}
+
+body main section form #timeLeft {
+  color: black;
+  font-size: 13px;
+  font-family: georgia;
+}
+
+body main section form #timeLeft span {
+  font-weight: bold;
+  font-size: 15px;
+  color: orange;
+  text-shadow: 3px 3px 5px black;
+}
+
+body main section form #scoreBoard {
+  color: black;
+  font-size: 13px;
+  font-family: georgia;
+}
+
+body main section form #scoreBoard span {
+  font-weight: bold;
+  font-size: 15px;
+  color: lime;
+  text-shadow: 3px 3px 5px black;
+}
+
+body main section form #best {
+  color: black;
+  font-size: 13px;
+  font-family: georgia;
+}
+
+body main section form #best span {
+  font-weight: bold;
+  font-size: 15px;
+  color: #17a2b8;
+  text-shadow: 3px 3px 5px black;
+}
+
+body main section form .blockquote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+body main section form .blockquote .blockquote-footer {
+  color: rgba(255, 165, 0, 0.7);
+  font-family: Georgia;
+  font-size: 11px;
+  margin: 0;
+  padding: 0;
+}
+
+body main section form .blockquote .blockquote-footer cite {
+  color: orange;
+  font-family: Georgia;
+  font-size: 11px;
+  font-weight: bold;
+  margin-left: .5em;
+}
+
+body main section form .blockquote .fa-umbrella {
+  color: rgba(255, 165, 0, 0.7);
+  font-size: 18px;
+}
+/*# sourceMappingURL=speed.css.map */
