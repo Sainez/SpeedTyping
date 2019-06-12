@@ -24,9 +24,9 @@ const words = [
     'Morocco', 'collaborate', 'application', 'repository', 'library', 'server', 'sass', 'bootstrap', 'html', 'passport', 'strategy', 'AFCON', 'Senegal',
     'Egypt', 'Algeria', 'Qatar', 'Ghana', 'Barcelona', 'Brazil', 'American', 'England', 'Mozambique', 'rebutia', 'semiprime', 'Guonzalez', 'better', 'atmost',
     'cooling', 'hot tea', 'champ', 'despicable', 'twitter', 'news gang', 'sicario', 'marvel', 'netflix', 'Bombay', 'Miami', 'Nairobi', 'newyorican', 'polish',
-    'accent', 'irish', 'Trinidad', 'marmalized', 'ovation', 'premiere', 'mehico', 'Texas', 'cowboy', 'cowgirl', 'new Sheriff', 'upTown', 'downTown', 'saxophone',
+    'accent', 'irish', 'Trinidad', 'marmalized', 'ovation', 'premiere', 'monroe', 'Texas', 'cowboy', 'cowgirl', 'new Sheriff', 'upTown', 'downTown', 'saxophone',
     'violin', 'guitar', 'brass hat', 'jurisdiction', 'wink', 'wallow', 'tusker', 'lagger', 'Mr morgan', 'Furguson', "The McDonald's", "The Hamiltons",
-    "theatre", 'heartstrings', "assemble", 'theatrix', "Madison", "Ms Ogutu", 'hurricane', 'highlanders', 'mamelodi', 'sundowns', "balon d'ore", 'the Oscars',
+    "theatre", 'heartstrings', "assemble", 'theatrix', "Madison", "Ms Ogutu", 'hurricane', 'highlanders', 'mamelodi', 'sundowns', "ballon d'or", 'the Oscars',
     "the Grammys", 'panther', 'gal gadot', 'Tomb Rider', 'Russia', 'moscow', 'world cup', 'trophy', 'hat trick', 'salsa', 'latin', 'tap dance', 'kizomba',
     'bachata', 'mambo', 'cumbia', 'Colombia', 'Cameroon', 'Angola', 'arabic', 'teamo', 'gracias', 'brand name', 'Jocasta', 'Santa Claus', 'Mrs. Claus',
     'test case', 'exploring', 'sacramentality', 'swapper', 'no','wauw!', 'sheldrake', 'amaze', 'foxish', 'actor', 'sparge', 'flatbed lorry', 'yumi', 'blessing',
@@ -61,6 +61,7 @@ const words = [
     'exclusive', 'inclusive', 'PyCharm', 'sublime', 'io.emit', 'app.use', 'cors', 'request', 'cross-origin', 'error', 'hashing', 'salting', 'crypto',
     'filter', 'mongoose', 'sequelize', 'mutation', 'injection', 'clean code', 'bad code', 'render', 'return', 'reducers', 'post', 'async', 'forEach',
     'function', 'serializers', 'view', 'model', 'settings', 'root', 'hosting', 'deploy', 'linuxer', 'cytonnaire', 'nandirite', 'siayarite', 'kutorite',
-    'maasai', 'objectivity', "nyong'o", 'lakeside', 'euphrates', 'supersport', 'skysport', 'wakanda forever!', 'hurrah!', 'boo'
+    'maasai', 'objectivity', "nyong'o", 'lakeside', 'euphrates', 'supersport', 'skysport', 'wakanda forever!', 'hurrah!', 'boo', 'lorento', 'Carlos',
+    'bolivia', 'Ukraine'
 ]
 
